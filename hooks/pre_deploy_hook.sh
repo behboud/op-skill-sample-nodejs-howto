@@ -72,8 +72,8 @@ if [[ $TARGET == "all" || $TARGET == "lambda" ]]; then
         popd
         ask deploy -t skill --force
         if [[ $? == 0 ]]; then
-            skillIdInServerless=$(grep "alexaSkill" lambda/custom/serverless.yml | cut -d: -f2)
-            if [[ $skillIdInServerless == "- alexaSkill" ]]; then
+            skillIdInServerless=$(grep "alexaSkill" lambda/custom/serverless.yml | cut -d: -f2 | tr -d ' ')
+            if [[ $skillIdInServerless == "-alexaSkill" ]]; then
                 sed -i.bak "s/- alexaSkill/- alexaSkill: $(jq -r '.deploy_settings.default.skill_id' .ask/config)/g" lambda/custom/serverless.yml
                 pushd lambda/custom
                 serverless_deploy
