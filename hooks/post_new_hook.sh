@@ -21,6 +21,7 @@ pushd $SKILL_NAME/lambda/custom
 npm i
 popd
 sed -i.bak "s/service: alexa/service: $SKILL_NAME/g" $SKILL_NAME/lambda/custom/serverless.yml
+rm -rf $SKILL_NAME/.git
 echo "###########################"
 
 exit 0
