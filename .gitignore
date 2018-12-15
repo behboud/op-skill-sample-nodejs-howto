@@ -1,0 +1,13 @@
+# package directories
+node_modules
+lambda/custom/node_modules
+jspm_packages
+dist
+lambda/custom/dist
+# Serverless directories
+.serverless
+lambda/custom/.serverless
+
+
+# other
+.DS_Store

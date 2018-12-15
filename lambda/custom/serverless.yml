@@ -1,0 +1,26 @@
+service: alexa
+custom:
+  webpack:
+    packager: npm
+    includeModules: true
+    forceExclude:
+      - aws-sdk
+package:
+  individually: true
+plugins:
+  - serverless-webpack
+  - serverless-bespoken
+  - serverless-offline
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  memorySize: 128
+  timeout: 10
+  versionFunctions: false
+  region: eu-west-1
+functions:
+  skill:
+    handler: src/index.handler
+    events:
+      - alexaSkill

@@ -1,0 +1,56 @@
+{
+    "name": "op-skill-sample-nodejs-howto",
+    "version": "0.0.1",
+    "description": "An Alexa custom skill for the Amazon Echo with opinions on tools and frameworks",
+    "main": "src/index.ts",
+    "license": "MIT",
+    "alexa": {
+        "invocation": {
+            "en-US": "mine helper",
+            "en-GB": "mine helper",
+            "de-DE": "mine helfer"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/behboud/op-skill-sample-nodejs-howto"
+    },
+    "scripts": {
+        "debug": "chmod +x ./debug.sh && ./debug.sh"
+    },
+    "dependencies": {
+        "ask-sdk-core": "^2.3.0",
+        "ask-sdk-model": "^1.10.1",
+        "i18next": "^13.0.0",
+        "i18next-sprintf-postprocessor": "^0.2.2",
+        "ssml-jsx": "^2.0.3"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.2.2",
+        "@babel/plugin-proposal-class-properties": "^7.2.1",
+        "@babel/plugin-proposal-object-rest-spread": "^7.2.0",
+        "@babel/preset-env": "^7.2.0",
+        "@babel/preset-typescript": "^7.1.0",
+        "@types/i18next": "^12.1.0",
+        "@types/i18next-sprintf-postprocessor": "^0.0.29",
+        "@types/node": "^10.12.15",
+        "@types/webpack": "^4.4.21",
+        "@types/webpack-node-externals": "^1.6.3",
+        "alexa-language-model-generator": "^0.1.4",
+        "babel-loader": "^8.0.4",
+        "babel-plugin-transform-jsx": "^2.0.0",
+        "serverless-bespoken": "^1.0.0",
+        "serverless-offline": "^3.31.3",
+        "serverless-webpack": "^5.2.0",
+        "source-map-loader": "^0.2.4",
+        "typescript": "^3.2.2",
+        "webpack": "^4.27.1",
+        "webpack-node-externals": "^1.7.2"
+    },
+    "keywords": [
+        "alexa",
+        "alexa-skill",
+        "echo",
+        "skill"
+    ]
+}

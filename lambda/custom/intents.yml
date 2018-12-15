@@ -1,0 +1,42 @@
+RecipeIntent:
+    'en-US':
+      - how (can|do) (I|you) (build|craft|get|make) (|a|an) {item}
+      - how is (|a|an) {item} (built|crafted|made)
+      - (recipe|receipes) for (|a|an) {Item}
+      - what are the ingredients for (|a|an) {Item}
+      - what do (I|you) need (for|to make) (|a|an) {Item}
+      - what do I need to (|get to|have to) (build|craft|get for) (|a|an) {Item}
+      - what ingredients do I need to (build|craft|get|make) (|a|an) {Item}
+      - (what is|what's) (in|the recipe for) (|a|an) {Item}
+      - how to (build|craft|get|make) (|a|an) {Item}
+    'en-GB':
+      - how (can|do) (I|you) (build|craft|get|make) (|a|an) {item}
+      - how is (|a|an) {item} (built|crafted|made)
+      - (recipe|receipes) for (|a|an) {Item}
+      - what are the ingredients for (|a|an) {Item}
+      - what do (I|you) need (for|to make) (|a|an) {Item}
+      - what do I need to (|get to|have to) (build|craft|get for) (|a|an) {Item}
+      - what ingredients do I need to (build|craft|get|make) (|a|an) {Item}
+      - (what is|what's) (in|the recipe for) (|a|an) {Item}
+      - how to (build|craft|get|make) (|a|an) {Item}
+    'de-DE':
+      - wie (kann ich|kannst du) (|ein) {item} (bauen|craften|bekommen|machen)
+      - wie (baue|crafte|bekomme|mache) ich (|ein) {item}
+      - wie (baust|craftest|bekommst|machst) du (|ein) {item}
+      - wie wird ein {item} (gebaut|gemacht|gecraftet)
+      - (Rezept|Rezepte) für ein {item}
+      - was (sind die Zutaten|brauche ich) für ein {Item}
+      - was brauche ich zum (Bau|Craften|Herstellen) (eines|einer|von) {Item}
+      - was muss ich für ein {Item} bekommen
+      - was muss ich zum (Bau|Craften|Herstellen) (eines|einer|von) {Item} (besorgen|haben)
+      - was brauche ich für ein {Item}
+      - welche Zutaten brauche ich zum (Bau|Craften|Herstellen) (eines|einer|von) {Item}
+      - was ist (in|das Rezept für) (|einem|einer|ein) {Item}
+      - welches Rezept für ein {Item}
+      - wie soll {Item} (gecraftet|gemacht|gebaut|bezogen) werden
+
+AMAZON.CancelIntent:
+AMAZON.HelpIntent:
+AMAZON.StopIntent:
+AMAZON.FallbackIntent:
+AMAZON.RepeatIntent:

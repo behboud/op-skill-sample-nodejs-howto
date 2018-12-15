@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "outDir": ".webpack/service/src",
+        "sourceMap": true,
+        "noImplicitAny": true,
+        "target": "es2017",
+        "lib": ["es2017"],
+        "noUnusedLocals": true,
+        "noUnusedParameters": false,
+        "noFallthroughCasesInSwitch": true,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "mapRoot": ".webpack/service/src",
+        "rootDir": "src",
+        "allowJs": true,
+        "jsx": "preserve"
+    },
+    "include": ["src"],
+    "exclude": ["node_modules", "**/*.spec.ts"]
+}
