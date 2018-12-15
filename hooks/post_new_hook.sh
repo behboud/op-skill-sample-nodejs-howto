@@ -17,10 +17,10 @@ echo "###########################"
 echo "###### post-new hook ######"
 echo "###########################"
 
-pushd lambda/custom
+pushd $SKILL_NAME/lambda/custom
 npm i
 popd
-sed -i.bak "s/service: alexa/service: $SKILL_NAME/g" lambda/custom/serverless.yml
+sed -i.bak "s/service: alexa/service: $SKILL_NAME/g" $SKILL_NAME/lambda/custom/serverless.yml
 echo "###########################"
 
 exit 0
